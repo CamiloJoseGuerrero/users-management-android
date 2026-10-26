@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Render usa HTTPS. Solo se permite HTTP sin cifrar hacia el PC local
+     desde el emulador (10.0.2.2) para probar con .\mvnw.cmd spring-boot:run -->
+<network-security-config>
+    <domain-config cleartextTrafficPermitted="true">
+        <domain includeSubdomains="false">10.0.2.2</domain>
+    </domain-config>
+</network-security-config>
